@@ -7,7 +7,7 @@ const workExperienceData = [
   {
     id: 1,
     date: "may 2019 - jan 2021",
-    title: "software engineer - frontend",
+    title: "frontend engineer",
     company: {
       name: "warung pintar",
       url: "https://www.linkedin.com/company/warungpintar/",
@@ -87,22 +87,24 @@ export default function WorkExperience() {
   return (
     <div className="flex flex-col">
       <Heading>work experience</Heading>
-      <div className="flex flex-col gap-y-8">
+      <div className="flex flex-col gap-y-12">
         {workExperienceData.map((exp) => {
           return (
             <div key={exp.id}>
               <div className="flex flex-row justify-between">
+                <h2>{exp.title}</h2>
+                <h2 className="text-foreground text-base">{exp.date}</h2>
+              </div>
+              <div className="flex flex-row justify-between mb-2">
                 <h2>
+                  <span className="text-muted-foreground">at </span>
                   <Link href={exp.company.url} className="underline">
                     {exp.company.name}
                   </Link>{" "}
                 </h2>
-                <h2 className="text-foreground text-base">{exp.date}</h2>
+                <p className="text-muted-foreground">{exp.company.location}</p>
               </div>
-              <p className="text-muted-foreground mb-2">
-                {exp.company.location}
-              </p>
-              <h2>{exp.title}</h2>
+
               <p className="text-muted-foreground mb-2">{exp.description}</p>
               <div className="flex flex-row gap-x-2 flex-wrap gap-y-2">
                 {exp.stack.map((tech) => {
