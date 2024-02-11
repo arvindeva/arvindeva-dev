@@ -38,9 +38,9 @@ export default function Home() {
         <div>
           <Heading>about</Heading>
           <h2 className="text-muted-foreground">
-            hi, i'm arvin, a fullstack software engineer. i enjoy designing and
-            building applications. my current preferred stack revolves around
-            typescript(react) and go.
+            hi, i&apos;m arvin, a fullstack software engineer. i enjoy designing
+            and building applications. my current preferred stack revolves
+            around typescript(react) and go.
           </h2>
         </div>
         <WorkExperience />
