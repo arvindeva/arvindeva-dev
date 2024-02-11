@@ -16,13 +16,19 @@ export default function Education() {
             </Link>
             )
           </h1>
-          <p>leiden university, leiden, nl</p>
-          <p className="text-muted-foreground">2021-2023</p>
+          <p className="text-sm">
+            leiden university,{" "}
+            <span className="text-muted-foreground">leiden, nl</span>{" "}
+          </p>
+          <p className="text-muted-foreground text-sm">2021-2023</p>
         </li>
         <li>
           <h1>bsc. in computer science</h1>
-          <p>northeastern university, boston, usa</p>
-          <p className="text-muted-foreground">2010-2016</p>
+          <p className=" text-sm">
+            northeastern university,{" "}
+            <span className="text-muted-foreground text-sm">boston, usa</span>
+          </p>
+          <p className="text-muted-foreground text-sm">2010-2016</p>
         </li>
       </ul>
     </div>

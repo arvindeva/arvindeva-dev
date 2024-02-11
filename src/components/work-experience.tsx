@@ -96,16 +96,20 @@ export default function WorkExperience() {
                 <h2 className="text-foreground text-base">{exp.date}</h2>
               </div>
               <div className="flex flex-row justify-between mb-2">
-                <h2>
-                  <span className="text-muted-foreground">at </span>
-                  <Link href={exp.company.url} className="underline">
+                <h2 className="leading-none">
+                  <span className="text-muted-foreground text-sm">at </span>
+                  <Link href={exp.company.url} className="underline text-sm">
                     {exp.company.name}
                   </Link>{" "}
                 </h2>
-                <p className="text-muted-foreground">{exp.company.location}</p>
+                <p className="text-muted-foreground text-sm">
+                  {exp.company.location}
+                </p>
               </div>
 
-              <p className="text-muted-foreground mb-2">{exp.description}</p>
+              <p className="text-muted-foreground mb-2 text-sm">
+                {exp.description}
+              </p>
               <div className="flex flex-row gap-x-2 flex-wrap gap-y-2">
                 {exp.stack.map((tech) => {
                   return (

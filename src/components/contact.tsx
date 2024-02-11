@@ -8,7 +8,9 @@ export default function Contact() {
     <div className="flex flex-col">
       <Heading>contact</Heading>
       <p>
-        <span className="text-muted-foreground">feel free to email me at</span>{" "}
+        <span className="text-muted-foreground text-sm">
+          feel free to email me at
+        </span>{" "}
         arvindeva@gmail.com
       </p>
     </div>

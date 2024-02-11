@@ -22,10 +22,10 @@ export default function Home() {
       </header>
       <div className="mx-auto max-w-2xl w-full flex flex-col gap-y-12 mt-12 px-4">
         <div className="text-center flex flex-col gap-y-2">
-          <h1 className="text-5xl font-black bg-gradient-to-r from-pink-500 via-red-600 to-orange-500 text-transparent bg-clip-text animate-gradient">
+          <h1 className="text-4xl font-black bg-gradient-to-r from-pink-500 via-red-600 to-orange-500 text-transparent bg-clip-text animate-gradient">
             arvindeva wibisono
           </h1>
-          <h2 className="text-muted-foreground text-2xl">
+          <h2 className="text-muted-foreground text-xl">
             fullstack software engineer
           </h2>
           <div className="flex flex-row gap-x-2 justify-center">
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div>
           <Heading>about</Heading>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             hi, i&apos;m <span className="text-foreground">arvin</span>, a{" "}
             <span className="text-foreground">fullstack software engineer</span>{" "}
             based in <span className="text-foreground">the netherlands</span>. i
