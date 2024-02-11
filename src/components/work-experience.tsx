@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const workExperienceData = [
   {
     id: 1,
-    date: "2019 - 2021",
+    date: "may 2019 - jan 2021",
     title: "software engineer - frontend",
     company: {
       name: "warung pintar",
@@ -27,7 +27,7 @@ const workExperienceData = [
   },
   {
     id: 2,
-    date: "2018 - 2019",
+    date: "dec 2018 - may 2019",
     title: "frontend engineer",
     company: {
       name: "infonesia",
@@ -40,7 +40,7 @@ const workExperienceData = [
   },
   {
     id: 3,
-    date: "2016 - 2018",
+    date: "oct 2016 - sep 2018",
     title: "web developer",
     company: {
       name: "semesta farm",
@@ -77,7 +77,7 @@ const workExperienceData = [
       "rails",
       "rspec",
       "selenium",
-      "chai",
+      "jasmine",
       "jenkins",
     ],
   },
@@ -91,14 +91,18 @@ export default function WorkExperience() {
         {workExperienceData.map((exp) => {
           return (
             <div key={exp.id}>
-              <h2 className="text-foreground">{exp.date}</h2>
-              <h2>
-                {exp.title} <span className="text-muted-foreground">at</span>{" "}
-                <Link href={exp.company.url} className="underline">
-                  {exp.company.name}
-                </Link>
-              </h2>
-              {exp.company.location}
+              <div className="flex flex-row justify-between">
+                <h2>
+                  <Link href={exp.company.url} className="underline">
+                    {exp.company.name}
+                  </Link>{" "}
+                </h2>
+                <h2 className="text-foreground text-base">{exp.date}</h2>
+              </div>
+              <p className="text-muted-foreground mb-2">
+                {exp.company.location}
+              </p>
+              <h2>{exp.title}</h2>
               <p className="text-muted-foreground mb-2">{exp.description}</p>
               <div className="flex flex-row gap-x-2 flex-wrap gap-y-2">
                 {exp.stack.map((tech) => {
