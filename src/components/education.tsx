@@ -20,7 +20,7 @@ export default function Education() {
           <p className="text-muted-foreground">2021-2023</p>
         </li>
         <li>
-          <h1>bsc. in computer sciencee</h1>
+          <h1>bsc. in computer science</h1>
           <p>northeastern university, boston, usa</p>
           <p className="text-muted-foreground">2010-2016</p>
         </li>

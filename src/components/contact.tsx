@@ -7,7 +7,10 @@ export default function Contact() {
   return (
     <div className="flex flex-col">
       <Heading>contact</Heading>
-      <p>email: arvindeva@gmail.com</p>
+      <p>
+        <span className="text-muted-foreground">feel free to email me at</span>{" "}
+        arvindeva@gmail.com
+      </p>
     </div>
   );
 }

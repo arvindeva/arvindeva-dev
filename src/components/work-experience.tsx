@@ -1,6 +1,7 @@
 import { Exo } from "next/font/google";
 import Link from "next/link";
 import Heading from "@/components/ui/heading";
+import { Badge } from "@/components/ui/badge";
 
 const workExperienceData = [
   {
@@ -14,6 +15,15 @@ const workExperienceData = [
     },
     description:
       "developed and maintained features for company's super app, interal tools, and landing page.",
+    stack: [
+      "react",
+      "react native",
+      "typescript",
+      "graphql",
+      "nextjs",
+      "tailwind",
+      "docker",
+    ],
   },
   {
     id: 2,
@@ -26,6 +36,7 @@ const workExperienceData = [
     },
     description:
       "built a social media web application from start to production with a backend engineer and a UI designer.",
+    stack: ["react", "javascript", "graphql", "nextjs", "styled component"],
   },
   {
     id: 3,
@@ -38,6 +49,15 @@ const workExperienceData = [
     },
     description:
       "designed, built, and maintained the company website with a blog and a cms",
+    stack: [
+      "html",
+      "css",
+      "javascript",
+      "wordpress",
+      "yoast seo",
+      "wpforms",
+      "bootstrap",
+    ],
   },
   {
     id: 4,
@@ -50,6 +70,16 @@ const workExperienceData = [
     },
     description:
       "developed test plans and test automation for a full-stack carsharing application and integrated testing modules for both front-end and backend applications to existing CI/CD pipelines",
+    stack: [
+      "javascript",
+      "backbone.js",
+      "ruby",
+      "rails",
+      "rspec",
+      "selenium",
+      "chai",
+      "jenkins",
+    ],
   },
 ];
 
@@ -57,7 +87,7 @@ export default function WorkExperience() {
   return (
     <div className="flex flex-col">
       <Heading>work experience</Heading>
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-8">
         {workExperienceData.map((exp) => {
           return (
             <div key={exp.id}>
@@ -69,7 +99,16 @@ export default function WorkExperience() {
                 </Link>
               </h2>
               {exp.company.location}
-              <p className="text-muted-foreground">{exp.description}</p>
+              <p className="text-muted-foreground mb-2">{exp.description}</p>
+              <div className="flex flex-row gap-x-2 flex-wrap gap-y-2">
+                {exp.stack.map((tech) => {
+                  return (
+                    <Badge key={tech} variant="secondary" className="text-xs">
+                      {tech}
+                    </Badge>
+                  );
+                })}
+              </div>
             </div>
           );
         })}
