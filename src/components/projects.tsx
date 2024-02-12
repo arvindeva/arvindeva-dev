@@ -42,7 +42,7 @@ export default function Projects() {
           <Link href="https://bmrlabel.com/">
             <h1 className="underline">bmr labels</h1>
           </Link>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm">
             landing page for a labelling and packaging company. source code
             private.
           </p>
