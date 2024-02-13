@@ -14,7 +14,7 @@ const workExperienceData = [
       location: "jakarta, indonesia",
     },
     description:
-      "developed and maintained features for company's super app, interal tools, and landing page.",
+      "developed and maintained features for company's super app, internal tools, and landing page.",
     stack: [
       "react",
       "react native",
