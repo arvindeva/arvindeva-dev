@@ -1,4 +1,3 @@
-import { Exo } from "next/font/google";
 import Link from "next/link";
 import Heading from "@/components/ui/heading";
 import { Badge } from "@/components/ui/badge";

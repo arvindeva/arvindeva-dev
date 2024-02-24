@@ -20,6 +20,18 @@ export default function Projects() {
           </p>
         </li>
         <li>
+          <Link href="https://pedal-center.vercel.app/">
+            <h1 className="underline">pedal center</h1>
+          </Link>
+          <p className="text-muted-foreground text-sm">
+            mock online guitar pedal store built with shopify's hydrogem their
+            new headless commerce framework.{" "}
+            <Link href="https://github.com/arvindeva/pedal-hub">
+              <span className="underline text-primary-foreground">code</span>
+            </Link>
+          </p>
+        </li>
+        <li>
           <Link href="https://titik-tiga.vercel.app/">
             <h1 className="underline">titik tiga hotel</h1>
           </Link>
